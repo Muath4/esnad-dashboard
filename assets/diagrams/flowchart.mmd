@@ -1,0 +1,12 @@
+graph TD
+    A[Start] -->|Click me!| B{Is it?}
+    B -->|Yes| C[OK]
+    C --> D[Rethink]
+    D --> B
+    B ---->|No| E[End]
+
+    click A callback "Tooltip for Start"
+    click B callback "Tooltip for Decision"
+    click C callback "Tooltip for OK"
+    click D callback "Tooltip for Rethink"
+    click E callback "Tooltip for End"
